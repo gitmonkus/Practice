@@ -7,11 +7,17 @@ import requests
 # del my_list[2]
 # print(my_list)
 
-print("Hello \
-What is shaking and baking?")
-print("\a")
-print("\tHermit")
-print("time oh yeah!")
+# print("Hello \
+# What is shaking and baking?")
+# print("\a")
+# print("\tHermit")
+# print("time oh yeah!")
+
+f = 5
+g = 6
+t = (f*g)
+print(t)
+
 
 
 
