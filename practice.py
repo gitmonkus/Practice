@@ -1,3 +1,5 @@
+import requests
+
 # my_list = ["fish", "fun", 7, "taco"]
 # #print(my_list)
 # my_list.append("burrito")
@@ -10,6 +12,29 @@ What is shaking and baking?")
 print("\a")
 print("\tHermit")
 print("time oh yeah!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
