@@ -24,10 +24,17 @@
 # total -= t
 # print(total)
 
-day = 6
-print("03 - %s - 2019" % day)
-print("03 - %02d - 2019" % day)
+# day = 6
+# print("03 - %s - 2019" % day)
+# print("03 - %02d - 2019" % day)
 
 
-Changed on github to test sync to client
+# Changed on github to test sync to client
 
+def pizza_pie(ingredient):
+    print("I love pizza pie")
+    pie="I love the pizza, pizza, pizza pie with {}!".format(ingredient)
+    return pie
+
+food = pizza_pie("egg")
+print(food)
