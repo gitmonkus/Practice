@@ -1,4 +1,4 @@
-import requests
+#import requests
 
 # my_list = ["fish", "fun", 7, "taco"]
 # #print(my_list)
@@ -13,12 +13,19 @@ import requests
 # print("\tHermit")
 # print("time oh yeah!")
 
-f = 5
-g = 6
-t = (f*g)
-print(t)
+# f = 5
+# g = 6
+# t = (f*g)
+# print(t)
 
+def fishsticks(stuff):
+    pie = "You love the fishy {}?".format(stuff)
+    return pie
+    
+ask = input("What is your favorite food?")
+food = fishsticks(ask)
 
+print(food)
 
 
 
