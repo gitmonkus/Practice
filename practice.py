@@ -21,12 +21,13 @@
 def fishsticks(stuff):
     pie = "You love the fishy {}?".format(stuff)
     return pie
-    
+
 ask = input("What is your favorite food?")
+ask1 = input()
 food = fishsticks(ask)
 
 print(food)
-
+print(len(ask1))
 
 
 
