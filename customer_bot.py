@@ -11,7 +11,7 @@ def cs_service_bot():
         print("Sorry, we didn't understand your selection. \n")
         return cs_service_bot()
 
-def existng_customer():
+def existing_customer():
     print("What kind of support do you need? \n [1] Television Support \n [2] Internet Support \n [3] Speak to a support representative")
     response = input("Please enter the number corresponding to your choice ")
     if response == "1":
@@ -19,7 +19,7 @@ def existng_customer():
     elif response == "2":
         return internet_support()
     elif response == "3":
-        return live_rep(support)
+        return live_rep("support")
     else:
         print("Sorry, we didn't understand your selection.")
         return existing_customer()
@@ -32,7 +32,7 @@ def new_customer():
     elif response == "2":
         return home_visit()
     elif response == "3":
-        return live_rep(sales)
+        return live_rep("sales")
     else:
         print("Sorry, we didn't understand your selection.")
         return new_customer()
@@ -50,7 +50,7 @@ def television_support():
         print("Is it raining outside? If so, wait until it is not raining and then try again.")
         return did_that_help()
     elif response == "4":
-        return live_rep(support)
+        return live_rep("support")
     else:
         print("Sorry, we didn't understand your selection.")
         return television_support()
@@ -68,7 +68,7 @@ def internet_support():
         print("Move to a different region or install a VPN. Some areas block certain sites.")
         return did_that_help()
     elif response == "4":
-        return live_rep(support)
+        return live_rep("support")
     else:
         print("Sorry, we didn't understand your selection.")
         return television_support()
@@ -82,12 +82,58 @@ def did_that_help():
         print("Your time is very important to us.  Whom would you like to speak to? \n [1] Live representative \n [2] Schedule a home visit")
         second_response = input("Please enter the number corresponding to your choice. ")
         if second_response == "1":
-            return live_rep(support)
+            return live_rep("support")
         elif second_response == "2":
-            return home_visit(support)
+            return home_visit("support")
         else:
             print("Sorry, we didn't understand your selection.")
             return television_support()
             
-        
+def sign_up():
+    print("Great choice, friend! We're excited to have you join the DNS family! Please select the package you are interested in signing up for. \n [1] Bundle Deal (Internet + Cable) \n [2] Internet \n [3] Cable")
+    response = input("What are you signing up for?")
+    if response == "1":
+        print("You've selected the Bundle Package! Please schedule a home visit and our technician will come and set up your new service.")
+        return home_visit("new_install") 
+    elif response == "2":
+        print("You've selected the Internet Only Package! Please schedule a home visit and our technician will come and set up your new service.")
+        return home_visit("new_install") 
+    elif response == "3":
+        print("You've selected the Cable Only Package! Please schedule a home visit and our technician will come and set up your new service.")
+        return home_visit("new_install") 
+    else:
+        print("Sorry, we didn't understand your selection.")
+        return sign_up()
+          
+def home_visit(purpose = "none"):
+    if purpose == "none":
+        print("What is the purpose of the service? \n [1] New service installation. \n [2] Exisitng service repair. \n [3] Location scouting for unserviced region.")
+        response = input("what is your choice?")
+        if response == "1":
+            return home_visit("new_install")
+        elif response == "2":
+            return home_visit("support")
+        elif response == "3":
+            return home_visit("scout")
+        else:
+            visit_date = input("Please enter a date below when you are available for a technician to come to your home and %s" % purpose)
+            print("Wonderful! A technical will come visit you on %s. Please be available between the hours of 1:00 am and 11:00 pm." % visit_date)
+            return visit_date
+
+def live_rep(purpose):
+    if purpose == "sales":
+        return "Please hold while we connect you with a live sales representative. The wait time will be between two minutes and six hours. We thank you for your patience."
+    elif purpose == "support":
+        return "Please hold while we connect you with a live sales representative. The wait time will be between two minutes and six hours. We thank you for your patience."
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
