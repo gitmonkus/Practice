@@ -77,7 +77,7 @@ def did_that_help():
     print("Did the solution solve your problem? \n [1] Yes \n [2] No")
     response = input("Were we helpful?")
     if response == "1":
-        return "Thank you!"
+        print("Thank you! Have a GREAT day!")
     elif response == "2":
         print("Your time is very important to us.  Whom would you like to speak to? \n [1] Live representative \n [2] Schedule a home visit")
         second_response = input("Please enter the number corresponding to your choice. ")
@@ -115,20 +115,21 @@ def home_visit(purpose = "none"):
             return home_visit("support")
         elif response == "3":
             return home_visit("scout")
-        else:
+    else:
             visit_date = input("Please enter a date below when you are available for a technician to come to your home and %s" % purpose)
             print("Wonderful! A technical will come visit you on %s. Please be available between the hours of 1:00 am and 11:00 pm." % visit_date)
             return visit_date
 
 def live_rep(purpose):
     if purpose == "sales":
-        return "Please hold while we connect you with a live sales representative. The wait time will be between two minutes and six hours. We thank you for your patience."
+        print("Please hold while we connect you with a live sales representative. The wait time will be between two minutes and six hours. We thank you for your patience.")
     elif purpose == "support":
-        return "Please hold while we connect you with a live sales representative. The wait time will be between two minutes and six hours. We thank you for your patience."
+        print("Please hold while we connect you with a live sales representative. The wait time will be between two minutes and six hours. We thank you for your patience.")
+    else:
+        return "Function not working as expected!!!!  Fix it!!!!"
     
     
-    
-    
+cs_service_bot()    
     
     
     
