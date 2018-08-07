@@ -31,10 +31,17 @@
 
 # Changed on github to test sync to client
 
-def pizza_pie(ingredient):
-    print("I love pizza pie")
-    pie="I love the pizza, pizza, pizza pie with {}!".format(ingredient)
-    return pie
+# def pizza_pie(ingredient):
+#     print("I love pizza pie")
+#     pie="I love the pizza, pizza, pizza pie with {}!".format(ingredient)
+#     return pie
 
-food = pizza_pie("egg")
-print(food)
+# food = pizza_pie("egg")
+# print(food)
+
+def multiply(a,b):
+    print(a * b)
+    
+multiply(3,12)
+print("YOU are amazing!")
+  
