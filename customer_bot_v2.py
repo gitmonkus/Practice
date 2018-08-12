@@ -114,7 +114,7 @@ def home_visit(purpose = "none"):
         elif response == "3":
             home_visit("scout")
     else:
-            visit_date = input("Please enter a date below in the following format of 00-00-0000 when you are available for a technician to come to your home and %s \n" % purpose)
+            visit_date = input("Please enter a date below in the following format of mm-dd-yyyy when you are available for a technician to come to your home and %s \n" % purpose)
             print("Wonderful! A technician will come visit you on %s. Please be available between the hours of 1:00 am and 11:00 pm. \n" % visit_date)
             return visit_date
 
