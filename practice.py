@@ -29,6 +29,29 @@
 # print(food)
 # print(len(ask1))
 
+<<<<<<< HEAD
+twinkies = input(int("What quantity of twinkies do you shove in your mouth \n \n"))
+
+if twinkies < 100:
+    print("Too few in your mouth")
+    
+elif twinkies > 500:
+    print("Too many in your mouth")
+    
+else:
+    print("You crazy with those twinkies in your mouth")
+
+
+
+
+
+
+
+
+
+
+
+=======
 # #Write your function here
 # def double_index(lst, index):
 #   if index < len(lst):
@@ -184,6 +207,7 @@ usernames = []
 for word in words:
   if word[0] == '@':
     usernames.append(word)
+>>>>>>> baddc23abb90f0087b7df397c2c91f21e12fad5e
 
 
 
