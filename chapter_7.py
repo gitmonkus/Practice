@@ -8,7 +8,7 @@ def moon_weight():
     for year in range(1, years + 1):
         weight = weight + increase
         print("Afer year" , year , "of eating cookies, you weigh" , weight , "lbs")
-        time.sleep(3)
+        #time.sleep(3)
         if (year == years):
             print("\n\nSHOVE SOME FU$#%&@ LETTUCE IN THERE!\n\n")
 
